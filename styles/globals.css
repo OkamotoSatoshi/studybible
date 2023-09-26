@@ -1,0 +1,212 @@
+
+
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+}
+
+/* 自己写的 */
+
+
+.inner{
+  filter:blur(4px);
+}
+
+
+.inner-float {
+  position: relative;
+  top:-180px;
+  /* left: 30%; */
+  transform: translateY(-30%); 
+}
+
+.logo-size{
+  width: 32px !important;
+  height: 32px !important;
+}
+
+
+@media screen and (max-device-width: 450px) {
+
+  .banner-img img{
+    max-width: 100%;
+    height: 180px !important;
+  }
+  
+}
+
+@media screen and (max-device-width: 550px)  {
+  .detail iframe{
+    position: relative;
+    margin: auto;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+  }
+
+  
+
+  .detail p{
+    word-wrap:break-word; 
+    word-break:break-all;
+  }
+
+
+  
+  
+  
+}
+
+
+@media screen and (min-device-width: 750px)  {
+  .banner-img img{
+    max-width: 100%;
+    height: 450px !important;
+  }
+
+  .detail iframe{
+    display:block;
+    margin: 0 auto;
+    width: 80% !important;
+    height: 420px !important;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+  }
+
+  .detail img{
+    width: 50% !important;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 .3rem 0.75rem rgba(0,0,0,.15)!important;
+  }
+
+  
+}
+
+@media screen and (max-device-width: 1200px)  {
+
+  
+
+
+  .home-thumbnail{
+    max-width: 100%;
+    height: 200px;
+  }
+  
+}
+
+.n-footer {
+  /* background-color: #ffffff; */
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  bottom: 0;
+  color: #2d3b48;
+  text-align: center;
+  padding: 20px 30px;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+
+
+.class-title{
+  font-size: medium;
+}
+
+.logo-img{
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  height: 80px;
+  width: 80px;
+}
+
+
+.foot-icon{
+  font-weight: 300;
+  font-size: 34px;
+}
+
+.flex-top-logo{
+  margin-top: -60px ;
+}
+
+
+/* 详细页面的Blockquote */
+blockquote {
+  background-image: linear-gradient(to left, #ffffff 0%, #5400e618 100%);
+  box-shadow: 0 .15rem 0.35rem rgba(0,0,0,.15)!important;
+  border-left: 10px solid #9155FD;
+  margin: 2.5em 12px;
+  padding: 0.75em 12px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 5px;
+}
+blockquote:before {
+  color: #9155FD;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+
+  /* 超出行数自动隐藏 */
+.home-intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  word-break: break-all;  
+  -webkit-box-orient: vertical;
+}
+
+
+.footer-layout {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+
+.index-top {
+  position: relative;
+}
+
+
+@font-face {
+  font-family: 'Source Han Sans';
+  src: url('/vendor/@fortawesome/fontawesome-free/webfonts/heiti.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF;
+}
+
+body {
+  font-family: 'Open Sans', 'Source Han Sans', sans-serif;
+}
+

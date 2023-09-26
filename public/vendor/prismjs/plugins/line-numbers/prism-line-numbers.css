@@ -1,0 +1,41 @@
+pre[class*="language-"].line-bignumbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linebignumber;
+}
+
+pre[class*="language-"].line-bignumbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+.line-bignumbers .line-bignumbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-bignumbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-bignumbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linebignumber;
+	}
+
+		.line-bignumbers-rows > span:before {
+			content: counter(linebignumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
